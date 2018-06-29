@@ -182,7 +182,7 @@
             <groupId>org.apache.maven.plugins</groupId>
             <artifactId>maven-failsafe-plugin</artifactId>
             <configuration>
-              <classesDirectory>${project.build.directory}/${artifactId}.jar.original</classesDirectory>
+              <classesDirectory>${project.build.directory}/${project.build.finalName}.${project.packaging}.original</classesDirectory>
             </configuration>
           </plugin>
         </plugins>
